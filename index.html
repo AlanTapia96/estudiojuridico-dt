@@ -4,154 +4,763 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>MtEstudioJuridico</title>
-    <script src="https://kit.fontawesome.com/2e628165bc.js" crossorigin="anonymous"></script>
+    <link href="assets/solo-logo.png" rel="icon" />
+    <title>Dras. Demaria & Tapia</title>
+    <script
+      src="https://kit.fontawesome.com/2e628165bc.js"
+      crossorigin="anonymous"
+    ></script>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
       integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
       crossorigin="anonymous"
     />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;500&display=swap" rel="stylesheet">
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="./css/style.css">
+    />
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body class="bg-light">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">MT Estudio Juridico</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav ml-auto">
-          <a class="nav-link active" href="#"
-            >Inicio<span class="sr-only"></span></a
-          >
-          <a class="nav-link" href="#">Features</a>
-          <a class="nav-link" href="#">Contacto</a>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+      <div class="container px-4">
+        <a class="navbar-brand" href="./index">
+          <img
+            class="navbar-brand"
+            src="./assets/solo-logo.png"
+            alt=""
+            width="69"
+            height="50"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar"
+          aria-controls="navbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbar">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#inicio">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#sobre-nosotras">¿Quiénes somos?</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#nuestros-servicios"
+                >Nuestros servicios</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
 
-    <section id="main" class="container my-4">
-      <div class="row h-100">
-        <div class="col-6 col-img h-100">
-          <img
-            class="img-fluid"
-            src="https://images.pexels.com/photos/5668882/pexels-photo-5668882.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-          />
-        </div>
-        <div class="col-6 h-100">
-          <h2 class="text-center">Mariela Tapia<br />Estudio Jurídico</h1>
-          <p class="text-center font-italic">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, itaque
-            modi quibusdam quod quasi corporis nisi eveniet fugiat perferendis,
-            ea cumque eos alias debitis quisquam reiciendis velit vel tempore
-            qui.
-          </p>
+    <section id="inicio" class="pb-4">
+      <div class="container h-100">
+        <div class="row h-100">
+          <div
+            class="col-12 title h-100 d-flex justify-content-center align-items-center"
+          >
+            <h1 class="text-center">
+              Estudio Jurídico <br />
+              <span>Demaria & Tapia</span> <br />
+              <!-- <span class="uba"> Abogadas UBA </span> -->
+            </h1>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="mt-3">
-      <div id="banner">
-       </div>
-    </section>
-
-    <section id="servicios" class="mt-4">
+    <section id="sobre-nosotras" class="py-5 d-none d-xl-block">
+      <h2 class="text-center">¿QUIÉNES SOMOS?</h2>
       <div class="container">
-        <div class="row my-5">
-          <div class="col">
-            <h2 class="text-center">Nuestros servicios</h3>
+        <div class="row">
+          <div class="col-5">
+            <p class="mt-5">
+              Nuestro estudio jurídico está compuesto por un equipo de
+              profesionales graduados de la
+              <strong>Universidad de Buenos Aires</strong>, de un alto nivel de
+              preparación académica y vasta experiencia profesional. La
+              <strong>seriedad</strong> y el
+              <strong>profesionalismo </strong>que se brinda para la resolución
+              de cada caso permite conseguir mejores resultados para nuestros
+              clientes. Nuestra misión es ofrecer un
+              <strong>servicio personalizado</strong>, de alta calidad técnica,
+              oportuno y que responda satisfactoriamente a las necesidades
+              particulares de cada cliente.
+            </p>
+          </div>
+          <div
+            class="col-6 p-3 pb-5 ml-5 d-flex justify-content-end align-items-end"
+          >
+            <img class="img-fluid" src="./assets/uba-derecho.png" alt="uba" />
           </div>
         </div>
-        <div class="row d-flex justify-content-around">
-          <div class="card bg-light mb-3" style="max-width: 18rem;">
-            <div class="card-header text-center">Familia</div>
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-          <div class="card bg-light mb-3" style="max-width: 18rem;">
-            <div class="card-header text-center">Laboral</div>
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-          <div class="card bg-light mb-3" style="max-width: 18rem;">
-            <div class="card-header text-center">Perrito Malvado</div>
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
+        <div class="row mt-2">
+          <div class="col-12">
+            <p>
+              Asimismo, brindamos vías resolutorias de conflictos que permiten a
+              nuestros clientes obtener los
+              <strong> mejores resultados </strong> en el menor tiempo posible.
+              Ante la dificultad económica de los tiempos actuales en nuestro
+              país,
+              <strong> ofrecemos facilidades de pago y financiación </strong> a
+              fin de que puedas utilizar nuestros servicios.
+            </p>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="contact" class="container my-4">
-      <h2 class="text-center">Contacto</h2>
-      <div class="col-6">
-
-      </div>
-      <form id="form" class="col-6 ml-auto mt-4">
-          <div class="form-group row">
-            <div class="col p-0">
-              <input type="text" class="form-control" placeholder="Nombre" required />
-            </div>
-            <div class="col p-0">
-              <input type="text" class="form-control" placeholder="Apellido" required />
-            </div>
-          </div>
-          <div class="form-group row">
-            <input type="email" class="form-control" placeholder="Mail" required />
-          </div>
-          <div class="form-group row">
-            <textarea
-              id="form-textarea"
-              class="form-control"
-              rows="3"
-              placeholder="Mensaje" required
-            ></textarea>
-            <input id="send" value="Enviar" class="btn btn-dark btn-block mt-2" type="submit">
-          </input>
-          </div>
-      </form>
-    </section>
-    <footer class="bg-dark text-light py-4">
+    <section id="sobre-nosotras" class="py-5 d-xl-none">
+      <h2 class="text-center">¿QUIÉNES SOMOS?</h2>
       <div class="container">
-        <div class="row text-center">
-          <div class="col">
-            <p class="my-0">© 2021 All Rights Reserved.</h4>
+        <div class="row">
+          <div class="col-12">
+            <p class="mt-5">
+              Nuestro estudio jurídico está compuesto por un equipo de
+              profesionales graduados de la
+              <strong>Universidad de Buenos Aires</strong>, de un alto nivel de
+              preparación académica y vasta experiencia profesional. La
+              <strong>seriedad</strong> y el
+              <strong>profesionalismo </strong>que se brinda para la resolución
+              de cada caso permite conseguir mejores resultados para nuestros
+              clientes.
+            </p>
+            <p class="mt-5 mt-lg-0">
+              Nuestra misión es ofrecer un
+              <strong>servicio personalizado</strong>, de alta calidad técnica,
+              oportuno y que responda satisfactoriamente a las necesidades
+              particulares de cada cliente. Asimismo, brindamos vías
+              resolutorias de conflictos que permiten a nuestros clientes
+              obtener los <strong> mejores resultados </strong> en el menor
+              tiempo posible. Ante la dificultad económica de los tiempos
+              actuales en nuestro país,
+              <strong> ofrecemos facilidades de pago y financiación </strong> a
+              fin de que puedas utilizar nuestros servicios.
+            </p>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-12 col-xl-11">
+            <img class="img-fluid" src="./assets/uba-derecho.png" alt="uba" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="nuestros-servicios" class="py-5">
+      <div class="container">
+        <h2 class="text-center">NUESTROS SERVICIOS</h2>
+        <div class="servicios">
+          <div class="row justify-content-between">
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card">
+                <h4>DERECHO LABORAL</h4>
+                <h4>Servicios legales para TRABAJADORES</h4>
+                <div class="modal-button">
+                  <button
+                    class="btn"
+                    data-bs-target="#1"
+                    data-bs-toggle="modal"
+                  >
+                    Leer más
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card">
+                <h4>DERECHO LABORAL</h4>
+                <h4>Servicios legales para EMPRESAS</h4>
+                <div class="modal-button">
+                  <button
+                    class="btn"
+                    data-bs-target="#2"
+                    data-bs-toggle="modal"
+                  >
+                    Leer más
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card">
+                <h4>DERECHO CIVIL, FAMILIA</h4>
+                <h4>Y SUCESIONES</h4>
+                <div class="modal-button">
+                  <button
+                    class="btn"
+                    data-bs-target="#4"
+                    data-bs-toggle="modal"
+                  >
+                    Leer más
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card">
+                <h4>DERECHO PREVISIONAL</h4>
+                <div class="modal-button">
+                  <button
+                    class="btn"
+                    data-bs-target="#3"
+                    data-bs-toggle="modal"
+                  >
+                    Leer más
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card">
+                <h4>AMPAROS DE SALUD</h4>
+                <div class="modal-button">
+                  <button
+                    class="btn"
+                    data-bs-target="#5"
+                    data-bs-toggle="modal"
+                  >
+                    Leer más
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card">
+                <h4>DERECHO ADMINISTRATIVO</h4>
+                <div class="modal-button">
+                  <button
+                    class="btn"
+                    data-bs-target="#6"
+                    data-bs-toggle="modal"
+                  >
+                    Leer más
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="1"
+        aria-hidden="true"
+        aria-labelledby="1"
+        tabindex="1"
+      >
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title fs-5">
+                Servicios legales para TRABAJADORES
+              </h2>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <ul>
+                <li>Asesoramiento laboral permanente.</li>
+                <li>Representación, seguimiento y defensa judicial.</li>
+                <li>Despido directo e indirecto.</li>
+                <li>Trabajo no registrado.</li>
+                <li>Diferencias salariales.</li>
+                <li>Acoso laboral (Mobbing).</li>
+                <li>Redacción y contestación de Cartas Documentos.</li>
+                <li>
+                  Reclamos administrativos contra ART por accidentes y
+                  enfermedades de trabajo en Comisiones Médicas.
+                </li>
+                <li>Reclamos judiciales a ART</li>
+              </ul>
+
+              ¡NUNCA RENUNCIES SIN ASESORAMIENTO LEGAL PREVIO!
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="2"
+        aria-hidden="true"
+        aria-labelledby="2"
+        tabindex="2"
+      >
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title fs-5">Servicios legales para EMPRESAS</h2>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <ul>
+                <li>
+                  Abono Mensual a Medida: planes personalizados según las
+                  necesidades de cada empresa para reducción de riesgos y costos
+                  por conflictos laborales.
+                </li>
+                <li>Asesoramiento laboral permanente.</li>
+                <li>Formas de desvinculación y estrategias de negociación.</li>
+                <li>Representación, seguimiento y defensa judicial.</li>
+                <li>Registración de empleados acorde normativa.</li>
+                <li>
+                  Asesoramiento en cumplimiento de normativa (compliance).
+                </li>
+                <li>Atención de conflictos individuales y colectivos.</li>
+                <li>Redacción y contestación de Telegramas.</li>
+                <li>
+                  Asesoramiento y seguimiento en la aplicación de sanciones
+                  disciplinarias (Suspensiones, apercibimientos y configuración
+                  de abandono de trabajo).
+                </li>
+                <li>Redacción de contratos laborales.</li>
+                <li>Redacción y revisión de acuerdos laborales.</li>
+              </ul>
+              NO TE PREOCUPES DE LAS CUESTIONES LEGALES DE TU EMPRESA
+              CONTACTANOS PARA CONSULTAR POR TU ABONO MENSUAL Y ESTAR
+              PERMANENTEMENTE RESPALDADO POR NUESTRO ESTUDIO ¡NUNCA RENUNCIES
+              SIN ASESORAMIENTO LEGAL PREVIO!
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="3"
+        aria-hidden="true"
+        aria-labelledby="3"
+        tabindex="3"
+      >
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title fs-5">DERECHO PREVISIONAL</h2>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              Analizamos tu historia laboral y tus aportes para informarte sobre
+              las opciones vigentes para que puedas obtener tu mejor retiro. Si
+              te faltan unos años para jubilarte podemos planificar a futuro y
+              hasta comprar aportes por adelantado para que todo esté en orden
+              llegada la edad jubilatoria.
+              <ul>
+                <li>Jubilación ordinaria</li>
+                <li>Compra de aportes por adelantado (UCAP)</li>
+                <li>
+                  Pensión directa por fallecimiento de un trabajador en
+                  actividad
+                </li>
+                <li>Pensión derivada por fallecimiento de un jubilado</li>
+                <li>Retiro transitorio por invalidez</li>
+                <li>Jubilación por moratoria Ley 24.476 y Ley 27.705</li>
+                <li>Jubilación anticipada</li>
+                <li>Prestación por edad avanzada</li>
+                <li>Reajustes</li>
+                <li>Amparos</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="4"
+        aria-hidden="true"
+        aria-labelledby="4"
+        tabindex="4"
+      >
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title fs-5">
+                DERECHO CIVIL, FAMILIA Y SUCESIONES
+              </h2>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <ul>
+                <li>Sucesiones legítimas / testamentarias.</li>
+                <li>Daños y perjuicios.</li>
+                <li>División de condominio.</li>
+                <li>
+                  Accidentes de tránsito (Reclamos Judiciales y
+                  Extrajudiciales).
+                </li>
+                <li>Régimen de alimentos y comunicación.</li>
+                <li>Cuidado personal.</li>
+                <li>Divorcios.</li>
+                <li>Adopción.</li>
+                <li>Filiación.</li>
+                <li>Insania/Tutela.</li>
+                <li>Contratos de alquiler y derecho inmobiliario.</li>
+                <li>Usucapión.</li>
+                <li>Desalojos</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="5"
+        aria-hidden="true"
+        aria-labelledby="5"
+        tabindex="5"
+      >
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title fs-5">AMPAROS DE SALUD</h2>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              Te ayudamos para realizar el reclamo a fin de que tu obra social o
+              prepaga cumpla con sus obligaciones.
+              <ul>
+                <li>Cobertura de medicamentos.</li>
+                <li>Fertilización asistida.</li>
+                <li>Internaciones.</li>
+                <li>Cirugías.</li>
+                <li>Prótesis.</li>
+                <li>Prestaciones por discapacidad.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="6"
+        aria-hidden="true"
+        aria-labelledby="6"
+        tabindex="6"
+      >
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title fs-5">DERECHO ADMINISTRATIVO</h2>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              Asesoramiento y defensa en actuaciones administrativas y ante el
+              fuero judicial, trabajando cada caso particular en forma dedicada,
+              detallada, estratégica y diligente:
+              <ul>
+                <li>
+                  Tramitación de todo tipo de certificados en materia comercial
+                  y de industria para grandes sociedades y PyMEs ante el
+                  Ministerio de Desarrollo Productivo.
+                </li>
+                <li>Sumarios administrativos.</li>
+                <li>
+                  Presentaciones de Recursos de reconsideración, jerárquicos y
+                  nulidades.
+                </li>
+                <li>
+                  Licitaciones de bienes y servicios con el Estado Nacional
+                  (Decretos Nros. 1023/2001, 1030/2016 y normativa
+                  complementaria).
+                </li>
+                <li>
+                  Contratos en el marco de la Ley de Obra Pública N° 13064 y
+                  asesoría en renegociaciones contractuales.
+                </li>
+                <li>
+                  Readecuaciones provisorias y definitivas de precios de
+                  contratos de Obra Pública y de consultoría de Obra Pública
+                  (Decreto N° 691/2016).
+                </li>
+                <li>Amparos.</li>
+                <li>Medidas cautelares.</li>
+                <li>Impugnaciones.</li>
+                <li>Inconstitucionalidades</li>
+                <li>Recursos, reclamos y demandas administrativa</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="contacto">
+      <div class="container">
+        <div class="title-container">
+          <h2 class="text-center">CONTACTO</h2>
+          <h3>
+            Podés iniciar el reclamo de manera online desde la comodidad de tu
+            casa. <br />
+            Si preferís una atención presencial, podemos agendar una cita
+            nuestras oficinas en C.A.B.A. o Quilmes.
+          </h3>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="wrapper">
+              <div class="row no-gutters">
+                <div class="col-md-6 d-flex align-items-stretch">
+                  <div class="contact-wrap w-100 p-md-5 p-4 py-5">
+                    <h5 class="mb-4">
+                      Si queres dejarnos una breve consulta, a la brevedad uno
+                      de nuestros especialistas se pondrá en contacto con usted
+                    </h5>
+                    <form
+                      method="POST"
+                      id="contactForm"
+                      name="contactForm"
+                      class="contactForm"
+                      novalidate="novalidate"
+                    >
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <input
+                              type="text"
+                              class="form-control"
+                              name="name"
+                              id="name"
+                              placeholder="Nombre"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <input
+                              type="email"
+                              class="form-control"
+                              name="email"
+                              id="email"
+                              placeholder="Mail"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <textarea
+                              name="message"
+                              class="form-control"
+                              id="message"
+                              cols="30"
+                              rows="6"
+                              placeholder="Mensaje"
+                            ></textarea>
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <input
+                              type="submit"
+                              value="Enviar"
+                              class="btn btn-primary btn-block"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="col-md-6 d-flex align-items-stretch">
+                  <div class="info-wrap w-100 p-md-5 p-4 py-5 img">
+                    <div class="row">
+                      <div class="col-1"></div>
+                      <div class="col-11">
+                        <div class="dbox w-100 d-flex align-items-center">
+                          <a
+                            href="https://api.whatsapp.com/send?phone=+5491140890105&amp;text=Hola!%20"
+                            target="_blank"
+                          >
+                            <div
+                              class="icon d-flex align-items-center justify-content-center"
+                            >
+                              <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="text pl-3">
+                              <p>11-4089-0105</p>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="dbox w-100 d-flex align-items-center">
+                          <a
+                            href="https://api.whatsapp.com/send?phone=+5491156338856&amp;text=Hola!%20"
+                            target="_blank"
+                          >
+                            <div
+                              class="icon d-flex align-items-center justify-content-center"
+                            >
+                              <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="text pl-3">
+                              <p>11-5633-8856</p>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="dbox w-100 d-flex align-items-center">
+                          <a
+                            href="https://www.instagram.com/ej.dt/"
+                            class="instagram"
+                            target="_blank"
+                          >
+                            <div
+                              class="icon d-flex align-items-center justify-content-center"
+                            >
+                              <i class="fab fa-instagram"></i>
+                            </div>
+                            <div class="text pl-3">
+                              <p>ej.dt</p>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="dbox w-100 d-flex align-items-center">
+                          <a
+                            href="mailto:ejuridico.dt@gmail.com"
+                            target="_blank"
+                          >
+                            <div
+                              class="icon d-flex align-items-center justify-content-center"
+                            >
+                              <i class="far fa-envelope"></i>
+                            </div>
+                            <div class="text pl-3">
+                              <p>ejuridico.dt@gmail.com</p>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
 
+    <!-- <section id="contact" class="container my-4">
+      <h2 class="text-center">Contacto</h2>
+      <div class="col-6"></div>
+      <form id="form" class="col-6 ml-auto mt-4">
+        <div class="form-group row">
+          <div class="col p-0">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Nombre"
+              required
+            />
+          </div>
+          <div class="col p-0">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Apellido"
+              required
+            />
+          </div>
+        </div>
+        <div class="form-group row">
+          <input
+            type="email"
+            class="form-control"
+            placeholder="Mail"
+            required
+          />
+        </div>
+        <div class="form-group row">
+          <textarea
+            id="form-textarea"
+            class="form-control"
+            rows="3"
+            placeholder="Mensaje"
+            required
+          ></textarea>
+          <input
+            id="send"
+            value="Enviar"
+            class="btn btn-dark btn-block mt-2"
+            type="submit"
+          />
+        </div>
+      </form>
+    </section> -->
+    <!-- <footer class="bg-dark text-light py-4">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col">
+            <h4 class="my-0">© 2021 All Rights Reserved.</h4>
+          </div>
+        </div>
+      </div>
+    </footer> -->
+
     <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
       crossorigin="anonymous"
     ></script>
     <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
-      integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
       crossorigin="anonymous"
     ></script>
     <script src="./js/main.js"></script>

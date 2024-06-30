@@ -1,2 +1,0 @@
-# mtestudiojuridico
-Created with CodeSandbox
